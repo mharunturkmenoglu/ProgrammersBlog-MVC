@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/ProgrammersBlog.Services.dll": {}
         }
+      },
+      "ProgrammersBlog.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ProgrammersBlog.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProgrammersBlog.Shared.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../ProgrammersBlog.Services/ProgrammersBlog.Services.csproj",
       "msbuildProject": "../ProgrammersBlog.Services/ProgrammersBlog.Services.csproj"
+    },
+    "ProgrammersBlog.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ProgrammersBlog.Shared/ProgrammersBlog.Shared.csproj",
+      "msbuildProject": "../ProgrammersBlog.Shared/ProgrammersBlog.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "ProgrammersBlog.Services >= 1.0.0"
+      "ProgrammersBlog.Services >= 1.0.0",
+      "ProgrammersBlog.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -55,6 +71,9 @@
           "projectReferences": {
             "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj": {
               "projectPath": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj"
+            },
+            "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj": {
+              "projectPath": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj"
             }
           }
         }
