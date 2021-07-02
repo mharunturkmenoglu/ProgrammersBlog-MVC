@@ -4,13 +4,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Entities\Abstract\EntitiyBase.cs" />
-    <Compile Remove="Entities\Abstract\IEntity.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Entities\Abstract\" />
-  </ItemGroup>
-
 </Project>
