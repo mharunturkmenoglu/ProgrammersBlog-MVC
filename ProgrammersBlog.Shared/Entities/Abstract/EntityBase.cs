@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgrammersBlog.Shared.Entities.Abstract
 {
-    public abstract class EntitiyBase
+    public abstract class EntityBase
     {
         public virtual int Id { get; set; }
         public virtual DateTime CreatedTime { get; set; } = DateTime.Now;
