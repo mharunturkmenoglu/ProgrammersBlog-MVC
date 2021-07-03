@@ -1,0 +1,34 @@
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Entities.deps.json
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Entities.dll
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ref\ProgrammersBlog.Entities.dll
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Entities.pdb
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Services.dll
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Shared.dll
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Services.pdb
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Shared.pdb
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.csproj.AssemblyReference.cache
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.AssemblyInfoInputs.cache
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.AssemblyInfo.cs
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.csproj.CopyComplete
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.dll
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ref\ProgrammersBlog.Entities.dll
+C:\Users\Mustafa Harun\Desktop\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.pdb
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Entities.deps.json
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Entities.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ref\ProgrammersBlog.Entities.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Entities.pdb
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Services.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Shared.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Services.pdb
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\bin\Debug\net5.0\ProgrammersBlog.Shared.pdb
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.csproj.AssemblyReference.cache
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.AssemblyInfoInputs.cache
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.AssemblyInfo.cs
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.csproj.CoreCompileInputs.cache
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.csproj.CopyComplete
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ref\ProgrammersBlog.Entities.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Entities\obj\Debug\net5.0\ProgrammersBlog.Entities.pdb

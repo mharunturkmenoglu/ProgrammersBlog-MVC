@@ -5820,11 +5820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj",
+      "projectUniqueName": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj",
       "projectName": "ProgrammersBlog.Data",
-      "projectPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj",
+      "projectPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj",
       "packagesPath": "C:\\Users\\Mustafa Harun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Data\\obj\\",
+      "outputPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mustafa Harun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5841,11 +5841,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj": {
-              "projectPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj"
+            "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj": {
+              "projectPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj"
             },
-            "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj": {
-              "projectPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj"
+            "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj": {
+              "projectPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj"
             }
           }
         }
