@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj": {}
+    "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj": {
+    "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj",
         "projectName": "ProgrammersBlog.Services",
-        "projectPath": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj",
+        "projectPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj",
         "packagesPath": "C:\\Users\\Mustafa Harun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Services\\obj\\",
+        "outputPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mustafa Harun\\AppData\\Roaming\\NuGet\\NuGet.Config",

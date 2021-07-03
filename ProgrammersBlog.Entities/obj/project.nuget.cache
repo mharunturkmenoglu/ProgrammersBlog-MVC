@@ -1,23 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FKbn2pjcuSDZm9Zh1Vv32Wu/r8rHhb0yJY5bG942bF+Vj6Ebb6QuIMQv0BT3i0wI0NPe4u0LVxS5lKjVCUZrGA==",
+  "dgSpecHash": "cdTTyrLieB2bz//6Ug7eKOZUJWs6PLV4DF3HarR6qvS7oK4rer9HHxCD4uUlJNBp9/nRolB/Uhp1beGD+bduVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.7\\microsoft.entityframeworkcore.5.0.7.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.7\\microsoft.entityframeworkcore.abstractions.5.0.7.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.7\\microsoft.entityframeworkcore.analyzers.5.0.7.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

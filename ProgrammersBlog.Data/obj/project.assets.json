@@ -1,11 +1,65 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "ProgrammersBlog.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ProgrammersBlog.Services": "1.0.0",
+          "ProgrammersBlog.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProgrammersBlog.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProgrammersBlog.Entities.dll": {}
+        }
+      },
+      "ProgrammersBlog.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ProgrammersBlog.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProgrammersBlog.Services.dll": {}
+        }
+      },
+      "ProgrammersBlog.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ProgrammersBlog.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProgrammersBlog.Shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ProgrammersBlog.Entities/1.0.0": {
+      "type": "project",
+      "path": "../ProgrammersBlog.Entities/ProgrammersBlog.Entities.csproj",
+      "msbuildProject": "../ProgrammersBlog.Entities/ProgrammersBlog.Entities.csproj"
+    },
+    "ProgrammersBlog.Services/1.0.0": {
+      "type": "project",
+      "path": "../ProgrammersBlog.Services/ProgrammersBlog.Services.csproj",
+      "msbuildProject": "../ProgrammersBlog.Services/ProgrammersBlog.Services.csproj"
+    },
+    "ProgrammersBlog.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ProgrammersBlog.Shared/ProgrammersBlog.Shared.csproj",
+      "msbuildProject": "../ProgrammersBlog.Shared/ProgrammersBlog.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "ProgrammersBlog.Entities >= 1.0.0",
+      "ProgrammersBlog.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\": {}
@@ -13,11 +67,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj",
       "projectName": "ProgrammersBlog.Data",
-      "projectPath": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj",
+      "projectPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj",
       "packagesPath": "C:\\Users\\Mustafa Harun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Data\\obj\\",
+      "outputPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mustafa Harun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +87,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj": {
+              "projectPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj"
+            },
+            "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj": {
+              "projectPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

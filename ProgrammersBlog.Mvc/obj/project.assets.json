@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Mvc\\ProgrammersBlog.Mvc.csproj",
+      "projectUniqueName": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Mvc\\ProgrammersBlog.Mvc.csproj",
       "projectName": "ProgrammersBlog.Mvc",
-      "projectPath": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Mvc\\ProgrammersBlog.Mvc.csproj",
+      "projectPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Mvc\\ProgrammersBlog.Mvc.csproj",
       "packagesPath": "C:\\Users\\Mustafa Harun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mustafa Harun\\source\\repos\\ProgrammersBlog\\ProgrammersBlog.Mvc\\obj\\",
+      "outputPath": "C:\\Users\\Mustafa Harun\\Desktop\\ProgrammersBlog\\ProgrammersBlog.Mvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mustafa Harun\\AppData\\Roaming\\NuGet\\NuGet.Config",
