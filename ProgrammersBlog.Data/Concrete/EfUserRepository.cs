@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace ProgrammersBlog.Data.Concrete
 {
-    public class CategoryRepository : EfEntityRepositoryBase<Category>, ICategoryRepository
+    public class EfUserRepository : EfEntityRepositoryBase<User>, IUserRepository
     {
-        public CategoryRepository(DbContext context) : base(context)
+        public EfUserRepository(DbContext context) : base(context)
         {
         }
     }
