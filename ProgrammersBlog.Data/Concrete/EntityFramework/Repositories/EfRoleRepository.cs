@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammersBlog.Data.Concrete
+namespace ProgrammersBlog.Data.Concrete.EntityFramework.Repositories
 {
     public class EfRoleRepository : EfEntityRepositoryBase<Role>, IRoleRepository
     {
