@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
 {
-    public class ArtıcleMap : IEntityTypeConfiguration<Article>
+    public class ArticleMap : IEntityTypeConfiguration<Article>
     {
         public void Configure(EntityTypeBuilder<Article> builder)
         {
