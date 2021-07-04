@@ -161,16 +161,6 @@
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
-      "ProgrammersBlog.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/ProgrammersBlog.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProgrammersBlog.Services.dll": {}
-        }
-      },
       "ProgrammersBlog.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -543,11 +533,6 @@
         "version.txt"
       ]
     },
-    "ProgrammersBlog.Services/1.0.0": {
-      "type": "project",
-      "path": "../ProgrammersBlog.Services/ProgrammersBlog.Services.csproj",
-      "msbuildProject": "../ProgrammersBlog.Services/ProgrammersBlog.Services.csproj"
-    },
     "ProgrammersBlog.Shared/1.0.0": {
       "type": "project",
       "path": "../ProgrammersBlog.Shared/ProgrammersBlog.Shared.csproj",
@@ -556,7 +541,6 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "ProgrammersBlog.Services >= 1.0.0",
       "ProgrammersBlog.Shared >= 1.0.0"
     ]
   },
@@ -587,9 +571,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj": {
-              "projectPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj"
-            },
             "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj": {
               "projectPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj"
             }

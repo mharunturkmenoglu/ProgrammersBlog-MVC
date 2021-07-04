@@ -1512,7 +1512,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "ProgrammersBlog.Services": "1.0.0",
           "ProgrammersBlog.Shared": "1.0.0"
         },
         "compile": {
@@ -1520,16 +1519,6 @@
         },
         "runtime": {
           "bin/placeholder/ProgrammersBlog.Entities.dll": {}
-        }
-      },
-      "ProgrammersBlog.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/ProgrammersBlog.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProgrammersBlog.Services.dll": {}
         }
       },
       "ProgrammersBlog.Shared/1.0.0": {
@@ -5793,11 +5782,6 @@
       "type": "project",
       "path": "../ProgrammersBlog.Entities/ProgrammersBlog.Entities.csproj",
       "msbuildProject": "../ProgrammersBlog.Entities/ProgrammersBlog.Entities.csproj"
-    },
-    "ProgrammersBlog.Services/1.0.0": {
-      "type": "project",
-      "path": "../ProgrammersBlog.Services/ProgrammersBlog.Services.csproj",
-      "msbuildProject": "../ProgrammersBlog.Services/ProgrammersBlog.Services.csproj"
     },
     "ProgrammersBlog.Shared/1.0.0": {
       "type": "project",

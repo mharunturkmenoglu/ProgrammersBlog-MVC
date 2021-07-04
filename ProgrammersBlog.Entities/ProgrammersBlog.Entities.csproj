@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProgrammersBlog.Services\ProgrammersBlog.Services.csproj" />
     <ProjectReference Include="..\ProgrammersBlog.Shared\ProgrammersBlog.Shared.csproj" />
   </ItemGroup>
 
