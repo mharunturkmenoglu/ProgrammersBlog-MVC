@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace ProgrammersBlog.Entities.Dtos
 {
-    public class ArticleDto : DtoGetBase
+    public class ArticleListDto :DtoGetBase
     {
-        public Article Article { get; set; }
+        public IList<Article> Articles { get; set; }
     }
 }
