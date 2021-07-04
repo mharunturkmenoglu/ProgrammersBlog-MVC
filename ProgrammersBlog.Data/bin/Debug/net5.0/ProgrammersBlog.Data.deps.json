@@ -1066,16 +1066,10 @@
       },
       "ProgrammersBlog.Entities/1.0.0": {
         "dependencies": {
-          "ProgrammersBlog.Services": "1.0.0",
           "ProgrammersBlog.Shared": "1.0.0"
         },
         "runtime": {
           "ProgrammersBlog.Entities.dll": {}
-        }
-      },
-      "ProgrammersBlog.Services/1.0.0": {
-        "runtime": {
-          "ProgrammersBlog.Services.dll": {}
         }
       },
       "ProgrammersBlog.Shared/1.0.0": {
@@ -1767,11 +1761,6 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "ProgrammersBlog.Entities/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ProgrammersBlog.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
