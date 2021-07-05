@@ -64,6 +64,13 @@
         </div>
     </div>
 }
+@if (Model.ResultStatus == ResultStatus.Error)
+{
+    <div class="alert alert-danger mt-3">
+        @Model.Message<br />
+        Dashboard sayfasina geri donmek icin lutfen <a class="alert-link" asp-area="Admin" asp-controller="Home" asp-action="Index">tiklayiniz.</a>
+    </div>
+}
 @section Scripts
 {
     <script>
@@ -76,7 +83,7 @@
                 buttons: [
                     {
                         text: 'Ekle',
-                        className:'btn btn-success',
+                        className: 'btn btn-success',
                         action: function (e, dt, node, config) {
                             alert('Ekle Butonuna Basildi');
                         }
