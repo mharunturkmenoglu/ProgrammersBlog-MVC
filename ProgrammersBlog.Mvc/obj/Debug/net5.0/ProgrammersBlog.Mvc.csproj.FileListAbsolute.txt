@@ -394,3 +394,5 @@ C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\Razor\Views\_View
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\ProgrammersBlog.Mvc.RazorTargetAssemblyInfo.cs
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\ProgrammersBlog.Mvc.Views.pdb
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\ProgrammersBlog.Mvc.csproj.CopyComplete
+C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\startbootstrap-sb-admin-gh-pages\package-lock.json
+C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\startbootstrap-sb-admin-gh-pages\package.json
