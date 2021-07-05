@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammersBlog.Services.AutoMapper
+namespace ProgrammersBlog.Services.AutoMapper.Profiles
 {
     public class CategoryProfile : Profile
     {
