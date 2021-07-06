@@ -398,3 +398,4 @@ C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\Razor\Areas\Admin
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_LayoutJsPartial.cshtml.g.cs
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_LayoutSideBarNavPartial.cshtml.g.cs
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\_CategoryAddPartial.cshtml.g.cs
