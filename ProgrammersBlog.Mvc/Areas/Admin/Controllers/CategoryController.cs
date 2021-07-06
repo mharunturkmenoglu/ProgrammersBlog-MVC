@@ -22,6 +22,11 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
         { 
             var result = await _categoryService.GetAll();
             return View(result.Data);
+        } 
+        
+        public IActionResult Add()
+        {
+            return PartialView("_CategoryAddPartial");
         }
     }
 }
