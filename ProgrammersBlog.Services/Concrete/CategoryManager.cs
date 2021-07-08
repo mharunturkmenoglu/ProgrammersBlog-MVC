@@ -32,7 +32,7 @@ namespace ProgrammersBlog.Services.Concrete
             category.ModifiedByName = createdByName;
             var addedCategory = await _unitOfWork.Categories.AddASync(category);
             await _unitOfWork.SaveAsync();
-            return new DataResult<CategoryDto>(ResultStatus.Success, $"{categoryAddDto.Name} adli kategori basariyla eklendi",new CategoryDto 
+            return new DataResult<CategoryDto>(ResultStatus.Success, $"{categoryAddDto.Name} adli kategori basariyla eklendi", new CategoryDto
             {
                 Category = addedCategory,
                 ResultStatus = ResultStatus.Success,
@@ -76,10 +76,10 @@ namespace ProgrammersBlog.Services.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<CategoryDto>(ResultStatus.Error, "Boyle bir kategori bulunamadi.", new CategoryDto 
+            return new DataResult<CategoryDto>(ResultStatus.Error, "Boyle bir kategori bulunamadi.", new CategoryDto
             {
-                Category=null,
-                ResultStatus=ResultStatus.Error
+                Category = null,
+                ResultStatus = ResultStatus.Error
             });
         }
 
@@ -94,11 +94,11 @@ namespace ProgrammersBlog.Services.Concrete
                     ResultStatus = ResultStatus.Success
                 });
             }
-            return new DataResult<CategoryListDto>(ResultStatus.Error, "Hic bir kategori bulunamadi.", new CategoryListDto 
+            return new DataResult<CategoryListDto>(ResultStatus.Error, "Hic bir kategori bulunamadi.", new CategoryListDto
             {
                 Categories = null,
                 ResultStatus = ResultStatus.Error,
-                Message= "Hic bir kategori bulunamadi."
+                Message = "Hic bir kategori bulunamadi."
             });
         }
 
@@ -134,6 +134,18 @@ namespace ProgrammersBlog.Services.Concrete
             });
         }
 
+        public async Task<IDataResult<CategoryUpdateDto>> GetCategoryUpdateDto(int categoryId)
+        {
+            var result = await _unitOfWork.Categories.AnyAsync(c => c.Id == categoryId);
+            if (result)
+            {
+                var category = await _unitOfWork.Categories.GetAsync(c => c.Id == categoryId);
+                var categoryUpdateDto = _mapper.Map<CategoryUpdateDto>(category);
+                return new DataResult<CategoryUpdateDto>(ResultStatus.Success, categoryUpdateDto);
+            }
+            return new DataResult<CategoryUpdateDto>(ResultStatus.Error, "Boyle bir kategori bulunamadi", null);
+        }
+
         public async Task<IResult> HardDelete(int categoryId)
         {
             var category = await _unitOfWork.Categories.GetAsync(c => c.Id == categoryId);
@@ -150,9 +162,9 @@ namespace ProgrammersBlog.Services.Concrete
         {
             var category = _mapper.Map<Category>(categoryUpdateDto);
             category.ModifiedByName = modifiedByName;
-            var updatedCategory =await _unitOfWork.Categories.UpdateAsync(category);
+            var updatedCategory = await _unitOfWork.Categories.UpdateAsync(category);
             await _unitOfWork.SaveAsync();
-            return new DataResult<CategoryDto>(ResultStatus.Success, $"{categoryUpdateDto.Name} adli kategori basariyla guncellendi.",new CategoryDto 
+            return new DataResult<CategoryDto>(ResultStatus.Success, $"{categoryUpdateDto.Name} adli kategori basariyla guncellendi.", new CategoryDto
             {
                 Category = updatedCategory,
                 ResultStatus = ResultStatus.Success,
