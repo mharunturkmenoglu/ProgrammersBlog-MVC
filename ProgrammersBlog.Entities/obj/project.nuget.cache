@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vr4OguYrs+wNdnR1yLQhCaDBY+Ts09KRUIRNpxSbr6wCSHYP4GAYjXIzg9pnSwwoGCP3lLOuDACnQRJQfxpbjA==",
+  "dgSpecHash": "xYbVr9KhzhMcPs9Z+utHAH1ZyXVSVXj5StmwhM0j8/j7DKe1xqGeBPbapH6A7u2fPGyGLXYDjij6wDTLyfPC3Q==",
   "success": true,
   "projectFilePath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,8 @@
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
+    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.7\\microsoft.aspnetcore.cryptography.internal.5.0.7.nupkg.sha512",
+    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.7\\microsoft.aspnetcore.cryptography.keyderivation.5.0.7.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\2.2.0\\microsoft.aspnetcore.dataprotection.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.abstractions\\2.2.0\\microsoft.aspnetcore.diagnostics.abstractions.2.2.0.nupkg.sha512",
@@ -43,6 +44,8 @@
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.dependencymodel\\2.1.0\\microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.2.0\\microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.7\\microsoft.extensions.identity.core.5.0.7.nupkg.sha512",
+    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.identity.stores\\5.0.7\\microsoft.extensions.identity.stores.5.0.7.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.localization\\2.2.0\\microsoft.extensions.localization.2.2.0.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\2.2.0\\microsoft.extensions.localization.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Mustafa Harun\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
