@@ -18,7 +18,19 @@ namespace ProgrammersBlog.Services.Extensions
         public static IServiceCollection LoadMyServices( this IServiceCollection serviceCollection)
         {
             serviceCollection.AddDbContext<ProgrammersBlogContext>();
-            serviceCollection.AddIdentity<User, Role>().AddEntityFrameworkStores<ProgrammersBlogContext>();
+            serviceCollection.AddIdentity<User, Role>(options =>
+            {
+                // options of user's password
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 5;
+                options.Password.RequiredUniqueChars = 0;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                // options of user's username and email 
+                options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+                options.User.RequireUniqueEmail = true;
+            }).AddEntityFrameworkStores<ProgrammersBlogContext>();
             serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
             serviceCollection.AddScoped<ICategoryService, CategoryManager>();
             serviceCollection.AddScoped<IArticleService, ArticleManager>();
