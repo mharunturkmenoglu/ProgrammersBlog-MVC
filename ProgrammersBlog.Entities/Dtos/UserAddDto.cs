@@ -28,7 +28,7 @@ namespace ProgrammersBlog.Entities.Dtos
         [MinLength(5, ErrorMessage = "{0} {1} karakterden az olmamalidir")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-        [DisplayName("Sifre")]
+        [DisplayName("Telefon Numarasi")]
         [Required(ErrorMessage = "{0} bos gecilmemelidir.")]
         [MaxLength(30, ErrorMessage = "{0} {1} karakterden fazla olmamalidir")]
         [MinLength(13, ErrorMessage = "{0} {1} karakterden az olmamalidir")]    // 13 chars // +905555555555
