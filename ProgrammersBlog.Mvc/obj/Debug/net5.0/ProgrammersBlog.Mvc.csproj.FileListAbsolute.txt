@@ -403,3 +403,4 @@ C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.AspNetC
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs

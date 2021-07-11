@@ -32,7 +32,7 @@ namespace ProgrammersBlog.Mvc
             services.ConfigureApplicationCookie(options =>
             {
                 options.LoginPath = new PathString("/Admin/User/Login");
-                options.LogoutPath = new PathString("Admin/User/Logout");
+                options.LogoutPath = new PathString("/Admin/User/Logout");
                 options.Cookie = new CookieBuilder
                 {
                     Name = "ProgrammersBlog",
