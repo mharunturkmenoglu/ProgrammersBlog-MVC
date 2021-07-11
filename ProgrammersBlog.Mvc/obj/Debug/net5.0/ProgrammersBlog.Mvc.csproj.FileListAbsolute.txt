@@ -37,8 +37,6 @@ C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.As
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Cors.dll
-C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.AspNetCore.DataProtection.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -123,8 +121,6 @@ C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.Ex
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.Extensions.Hosting.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.Extensions.Http.dll
-C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.Extensions.Identity.Core.dll
-C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
@@ -402,3 +398,8 @@ C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\Razor\Areas\Admin
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\_CategoryUpdatePartial.cshtml.g.cs
+C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\source\ProgrammersBlog\ProgrammersBlog.Mvc\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
