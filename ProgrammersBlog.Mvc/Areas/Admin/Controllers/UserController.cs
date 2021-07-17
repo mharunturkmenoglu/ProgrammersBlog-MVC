@@ -20,14 +20,16 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
     public class UserController : Controller
     {
         private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
         private readonly IWebHostEnvironment _env;
         private readonly IMapper _mapper;
 
-        public UserController(UserManager<User> userManager, IMapper mapper, IWebHostEnvironment env)
+        public UserController(UserManager<User> userManager, IMapper mapper, IWebHostEnvironment env, SignInManager<User> signInManager)
         {
             _userManager = userManager;
             _mapper = mapper;
             _env = env;
+            _signInManager = signInManager;
         }
 
         public async Task<IActionResult> Index()
@@ -41,9 +43,36 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult UserLogin()
+        public IActionResult Login()
         {
-            return View();
+            return View("UserLogin");
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(UserLoginDto userLoginDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(userLoginDto.Email);
+                if (user != null)
+                {
+                    var result = await _signInManager.PasswordSignInAsync(user, userLoginDto.Password,
+                        userLoginDto.RememberMe, false);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("","Email veya sifreniz yanlistir.");
+                        return View("UserLogin");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Email veya sifreniz yanlistir.");
+                }
+            }
+            return View("UserLogin");
         }
 
         [HttpGet]
@@ -70,7 +99,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                userAddDto.Picture = await ImageUpload(userAddDto.UserName,userAddDto.PictureFile);
+                userAddDto.Picture = await ImageUpload(userAddDto.UserName, userAddDto.PictureFile);
                 var user = _mapper.Map<User>(userAddDto);
                 var result = await _userManager.CreateAsync(user, userAddDto.Password);
                 if (result.Succeeded)
@@ -188,7 +217,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
                 {
                     foreach (var error in result.Errors)
                     {
-                        ModelState.AddModelError("",error.Description);
+                        ModelState.AddModelError("", error.Description);
                     }
                     var userUpdateErrorViewModel = JsonSerializer.Serialize(new UserUpdateAjaxViewModel
                     {
@@ -203,7 +232,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
                 var userUpdateModelStateErrorViewModel = JsonSerializer.Serialize(new UserUpdateAjaxViewModel
                 {
                     UserUpdateDto = userUpdateDto,
-                    UserUpdatePartial = await this.RenderViewToStringAsync("_UserUpdatePartial",userUpdateDto)
+                    UserUpdatePartial = await this.RenderViewToStringAsync("_UserUpdatePartial", userUpdateDto)
                 });
                 return Json(userUpdateModelStateErrorViewModel);
             }
