@@ -10,11 +10,6 @@ namespace ProgrammersBlog.Entities.Dtos
 {
     public class UserLoginDto
     {
-        [DisplayName("Kullanici Adi")]
-        [Required(ErrorMessage = "{0} bos gecilmemelidir.")]
-        [MaxLength(70, ErrorMessage = "{0} {1} karakterden fazla olmamalidir")]
-        [MinLength(3, ErrorMessage = "{0} {1} karakterden az olmamalidir")]
-        public string UserName { get; set; }
         [DisplayName("Email Adresi")]
         [Required(ErrorMessage = "{0} bos gecilmemelidir.")]
         [MaxLength(100, ErrorMessage = "{0} {1} karakterden fazla olmamalidir")]

@@ -12,6 +12,7 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using ProgrammersBlog.Mvc.Areas.Admin.Models;
 namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
@@ -31,7 +32,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
             _env = env;
             _signInManager = signInManager;
         }
-
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var users = await _userManager.Users.ToListAsync();
@@ -74,7 +75,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
             }
             return View("UserLogin");
         }
-
+        [Authorize]
         [HttpGet]
         public async Task<JsonResult> GetAllUsers()
         {
@@ -89,11 +90,13 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
             });
             return Json(userListDto);
         }
+        [Authorize]
         [HttpGet]
         public IActionResult Add()
         {
             return PartialView("_UserAddPartial");
         }
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Add(UserAddDto userAddDto)
         {
@@ -140,6 +143,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
             return Json(userAddAjaxModelStateErrorModel);
 
         }
+        [Authorize]
         public async Task<JsonResult> Delete(int userId)
         {
             var user = await _userManager.FindByIdAsync(userId.ToString());
@@ -172,6 +176,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
                 return Json(deletedUserErrorModel);
             }
         }
+        [Authorize]
         [HttpGet]
         public async Task<PartialViewResult> Update(int userId)
         {
@@ -179,6 +184,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
             var userUpdateDto = _mapper.Map<UserUpdateDto>(user);
             return PartialView("_UserUpdatePartial", userUpdateDto);
         }
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Update(UserUpdateDto userUpdateDto)
         {
@@ -237,7 +243,6 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
                 return Json(userUpdateModelStateErrorViewModel);
             }
         }
-
         public async Task<string> ImageUpload(string userName, IFormFile pictureFile)
         {
             string wwwroot = _env.WebRootPath;
