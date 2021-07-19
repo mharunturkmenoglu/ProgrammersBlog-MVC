@@ -56,9 +56,9 @@ namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
             {
                 Id = 1,
                 UserName = "adminuser",
-                NormalizedEmail = "ADMINUSER",
+                NormalizedUserName = "ADMINUSER",
                 Email = "adminuser@gmail.com",
-                NormalizedUserName = "ADMINUSER@GMAIL.COM",
+                NormalizedEmail = "ADMINUSER@GMAIL.COM",
                 PhoneNumber = "+905555555555",
                 Picture = "defaultUser.png",
                 EmailConfirmed = true,
@@ -71,16 +71,16 @@ namespace ProgrammersBlog.Data.Concrete.EntityFramework.Mappings
             {
                 Id = 2,
                 UserName = "editoruser",
-                NormalizedEmail = "EDITORUSER",
+                NormalizedUserName = "EDITORUSER",
                 Email = "editoruser@gmail.com",
-                NormalizedUserName = "EDITORUSER@GMAIL.COM",
+                NormalizedEmail = "EDITORUSER@GMAIL.COM",
                 PhoneNumber = "+905555555555",
                 Picture = "defaultUser.png",
                 EmailConfirmed = true,
                 PhoneNumberConfirmed = true,
                 SecurityStamp = Guid.NewGuid().ToString()
             };
-            adminUser.PasswordHash = CreatePaswordHash(adminUser, "editoruser");
+            editorUser.PasswordHash = CreatePaswordHash(editorUser, "editoruser");
 
             builder.HasData(adminUser, editorUser);
         }
