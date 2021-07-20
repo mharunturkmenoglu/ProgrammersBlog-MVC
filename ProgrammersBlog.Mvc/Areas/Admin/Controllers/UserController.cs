@@ -54,7 +54,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByEmailAsync(userLoginDto.Email);
-                if (user!=null)
+                if (user != null)
                 {
                     var result = await _signInManager.PasswordSignInAsync(user, userLoginDto.Password,
                         userLoginDto.RememberMe, false);
@@ -64,7 +64,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
                     }
                     else
                     {
-                        ModelState.AddModelError("","Email veya sifreniz yanlistir.");
+                        ModelState.AddModelError("", "Email veya sifreniz yanlistir.");
                         return View("UserLogin");
                     }
                 }
@@ -80,7 +80,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home", new {Area = ""});
+            return RedirectToAction("Index", "Home", new { Area = "" });
         }
         [Authorize(Roles = "Admin")]
         [HttpGet]
@@ -288,7 +288,7 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
                     {
                         ImageDelete(oldUserPicture);
                     }
-                    TempData.Add("SuccessMessage", $"{updatedUser.UserName} basariyla guncellenmistir");
+                    TempData.Add("SuccessMessage", $"{updatedUser.UserName} basariyla guncellenmistir.");
                     return View(userUpdateDto);
                 }
                 else
@@ -304,6 +304,46 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
             {
                 return View(userUpdateDto);
             }
+        }
+        [Authorize]
+        [HttpGet]
+        public ViewResult PasswordChange()
+        {
+            return View();
+        }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> PasswordChange(UserPasswordChangeDto userPasswordChangeDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.GetUserAsync(HttpContext.User);
+                var isVerified = await _userManager.CheckPasswordAsync(user, userPasswordChangeDto.CurrentPassword);
+                if (isVerified)
+                {
+                    var result = await _userManager.ChangePasswordAsync(user, userPasswordChangeDto.CurrentPassword,
+                        userPasswordChangeDto.NewPassword);
+                    if (result.Succeeded)
+                    {
+                        await _userManager.UpdateSecurityStampAsync(user);
+                        await _signInManager.SignOutAsync();
+                        await _signInManager.PasswordSignInAsync(user, userPasswordChangeDto.NewPassword, true, false);
+                        TempData.Add("SuccessMessage", $"Şifreniz başarıyla değiştirilmiştir.");
+                        return View();
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Lütfen, girmiş olduğunuz şu anki şifrenizi kontrol ediniz.");
+                    return View(userPasswordChangeDto);
+                }
+            }
+            else
+            {
+                return View(userPasswordChangeDto);
+            }
+
+            return View();
         }
         [Authorize(Roles = "Admin,Editor")]
         public async Task<string> ImageUpload(string userName, IFormFile pictureFile)
