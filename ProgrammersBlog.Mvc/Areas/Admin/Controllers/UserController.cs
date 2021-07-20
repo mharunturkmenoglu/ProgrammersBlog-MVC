@@ -263,6 +263,48 @@ namespace ProgrammersBlog.Mvc.Areas.Admin.Controllers
             var updateDto = _mapper.Map<UserUpdateDto>(user);
             return View(updateDto);
         }
+        [Authorize]
+        [HttpPost]
+        public async Task<ViewResult> ChangeDetails(UserUpdateDto userUpdateDto)
+        {
+            if (ModelState.IsValid)
+            {
+                bool isNewPictureUploaded = false;
+                var oldUser = await _userManager.GetUserAsync(HttpContext.User);
+                var oldUserPicture = oldUser.Picture;
+                if (userUpdateDto.PictureFile != null)
+                {
+                    userUpdateDto.Picture = await ImageUpload(userUpdateDto.UserName, userUpdateDto.PictureFile);
+                    if (oldUserPicture != "defaultUser.png")
+                    {
+                        isNewPictureUploaded = true;
+                    }
+                }
+                var updatedUser = _mapper.Map<UserUpdateDto, User>(userUpdateDto, oldUser);
+                var result = await _userManager.UpdateAsync(updatedUser);
+                if (result.Succeeded)
+                {
+                    if (isNewPictureUploaded)
+                    {
+                        ImageDelete(oldUserPicture);
+                    }
+                    TempData.Add("SuccessMessage", $"{updatedUser.UserName} basariyla guncellenmistir");
+                    return View(userUpdateDto);
+                }
+                else
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return View(userUpdateDto);
+                }
+            }
+            else
+            {
+                return View(userUpdateDto);
+            }
+        }
         [Authorize(Roles = "Admin,Editor")]
         public async Task<string> ImageUpload(string userName, IFormFile pictureFile)
         {
