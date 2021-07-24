@@ -31,5 +31,29 @@ namespace ProgrammersBlog.Mvc.Utilities
                 return $"{categoryName} adli kategori veritabanindan basariyla silindi.";
             }
         }
+        public static class Article
+        {
+            public static string NotFound(bool isPlural)
+            {
+                if (isPlural) return "Makaleler bulunamadi";
+                return "Boyle bir makale bulunamadi";
+            }
+            public static string Add(string articleTitle)
+            {
+                return $"{articleTitle} adli makale basariyla eklendi.";
+            }
+            public static string Update(string articleTitle)
+            {
+                return $"{articleTitle} adli makale basariyla guncellendi.";
+            }
+            public static string Delete(string articleTitle)
+            {
+                return $"{articleTitle} adli makale basariyla silindi.";
+            }
+            public static string HardDelete(string articleTitle)
+            {
+                return $"{articleTitle} adli makale veritabanindan basariyla silindi.";
+            }
+        }
     }
 }
