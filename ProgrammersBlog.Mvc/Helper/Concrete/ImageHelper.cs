@@ -26,7 +26,29 @@ namespace ProgrammersBlog.Mvc.Helper.Concrete
             _wwwroot = _env.WebRootPath;
         }
 
-        public async Task<IDataResult<UploadedImageDto>> UploadUserImage(string userName, IFormFile pictureFile, string folderName="userImages")
+        public IDataResult<ImageDeletedDto> Delete(string pictureName)
+        {
+            var fileToDelete = Path.Combine($"{_wwwroot}/{imgFolder}/", pictureName);
+            if (System.IO.File.Exists(fileToDelete))
+            {
+                var fileInfo = new FileInfo(fileToDelete);
+                var imageDeletedDto = new ImageDeletedDto
+                {
+                    Fullname = pictureName,
+                    Extension = fileInfo.Extension,
+                    Path = fileInfo.FullName,
+                    Size = fileInfo.Length
+                };
+                System.IO.File.Delete(fileToDelete);
+                return new DataResult<ImageDeletedDto>(ResultStatus.Success, imageDeletedDto);
+            }
+            else
+            {
+                return new DataResult<ImageDeletedDto>(ResultStatus.Error, "Boyle bir resim bulunamadi", null);
+            }
+        }
+
+        public async Task<IDataResult<UploadedImageDto>> UploadUserImage(string userName, IFormFile pictureFile, string folderName = "userImages")
         {
             if (!Directory.Exists($"{_wwwroot}/{imgFolder}/{folderName}"))
             {
