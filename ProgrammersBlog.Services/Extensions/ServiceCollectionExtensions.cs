@@ -9,15 +9,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using ProgrammersBlog.Entities.Concrete;
 
 namespace ProgrammersBlog.Services.Extensions
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection LoadMyServices( this IServiceCollection serviceCollection)
+        public static IServiceCollection LoadMyServices( this IServiceCollection serviceCollection, string connectionString)
         {
-            serviceCollection.AddDbContext<ProgrammersBlogContext>();
+            serviceCollection.AddDbContext<ProgrammersBlogContext>(options => options.UseSqlServer(connectionString));
             serviceCollection.AddIdentity<User, Role>(options =>
             {
                 // options of user's password
