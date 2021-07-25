@@ -31,7 +31,7 @@ namespace ProgrammersBlog.Services.Concrete
             return new DataResult<int>(ResultStatus.Error, "Beklenmeyen bir hatayla karsilasildi.", -1);
         }
 
-        public async Task<IDataResult<int>> CountByIsDeleted()
+        public async Task<IDataResult<int>> CountByNonDeleted()
         {
             var commentCount = await _unitOfWork.Comments.CountAsync(c => !c.IsDeleted);
             if (commentCount > -1)
