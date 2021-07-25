@@ -20,7 +20,7 @@ namespace ProgrammersBlog.Services.Concrete
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<IDataResult<int>> Count()
+        public async Task<IDataResult<int>> CountAsync()
         {
             var commentCount = await _unitOfWork.Comments.CountAsync();
             if (commentCount > -1)
@@ -31,7 +31,7 @@ namespace ProgrammersBlog.Services.Concrete
             return new DataResult<int>(ResultStatus.Error, "Beklenmeyen bir hatayla karsilasildi.", -1);
         }
 
-        public async Task<IDataResult<int>> CountByNonDeleted()
+        public async Task<IDataResult<int>> CountByNonDeletedAsync()
         {
             var commentCount = await _unitOfWork.Comments.CountAsync(c => !c.IsDeleted);
             if (commentCount > -1)
