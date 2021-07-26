@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProgrammersBlog.Services</name>
+    </assembly>
+    <members>
+        <member name="M:ProgrammersBlog.Services.Abstract.ICategoryService.GetCategoryUpdateDtoAsync(System.Int32)">
+            <summary>
+            returns CategoryUpdateDto representation of Category by given ID parameter.
+            </summary>
+            <param name="categoryId">Id value is greater than zero</param>
+            <returns>The Task that represent the asynchronous operation, returns DataResult</returns>
+        </member>
+        <member name="M:ProgrammersBlog.Services.Abstract.ICategoryService.AddAsync(ProgrammersBlog.Entities.Dtos.CategoryAddDto,System.String)">
+            <summary>
+            Adds a new Category by given categoryAddDto and createdByName parameters.
+            </summary>
+            <param name="categoryAddDto">{categoryAddDto} category information for adding operation</param>
+            <param name="createdByName">{string} username</param>
+            <returns>The Task that represent the asynchronous operation, returns DataResult</returns>
+        </member>
+        <member name="M:ProgrammersBlog.Services.Concrete.CategoryManager.AddAsync(ProgrammersBlog.Entities.Dtos.CategoryAddDto,System.String)">
+            <summary>
+            Adds a new Category by given categoryAddDto and createdByName parameters.
+            </summary>
+            <param name="categoryAddDto">{categoryAddDto} category information for adding operation</param>
+            <param name="createdByName">{string} username</param>
+            <returns>The Task that represent the asynchronous operation, returns DataResult</returns>
+        </member>
+        <member name="M:ProgrammersBlog.Services.Concrete.CategoryManager.GetCategoryUpdateDtoAsync(System.Int32)">
+            <summary>
+            returns CategoryUpdateDto representation of Category by given ID parameter.
+            </summary>
+            <param name="categoryId">Id value is greater than zero</param>
+            <returns>The Task that represent the asynchronous operation, returns DataResult</returns>
+        </member>
+    </members>
+</doc>

@@ -26,6 +26,12 @@ namespace ProgrammersBlog.Services.Concrete
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Adds a new Category by given categoryAddDto and createdByName parameters.
+        /// </summary>
+        /// <param name="categoryAddDto">{categoryAddDto} category information for adding operation</param>
+        /// <param name="createdByName">{string} username</param>
+        /// <returns>The Task that represent the asynchronous operation, returns DataResult</returns>
         public async Task<IDataResult<CategoryDto>> AddAsync(CategoryAddDto categoryAddDto, string createdByName)
         {
             var category = _mapper.Map<Category>(categoryAddDto);
@@ -135,6 +141,11 @@ namespace ProgrammersBlog.Services.Concrete
             });
         }
 
+        /// <summary>
+        /// returns CategoryUpdateDto representation of Category by given ID parameter.
+        /// </summary>
+        /// <param name="categoryId">Id value is greater than zero</param>
+        /// <returns>The Task that represent the asynchronous operation, returns DataResult</returns>
         public async Task<IDataResult<CategoryUpdateDto>> GetCategoryUpdateDtoAsync(int categoryId)
         {
             var result = await _unitOfWork.Categories.AnyAsync(c => c.Id == categoryId);

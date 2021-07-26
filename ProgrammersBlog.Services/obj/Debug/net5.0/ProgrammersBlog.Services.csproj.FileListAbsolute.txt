@@ -17,3 +17,4 @@ C:\source\ProgrammersBlog\ProgrammersBlog.Services\obj\Debug\net5.0\ProgrammersB
 C:\source\ProgrammersBlog\ProgrammersBlog.Services\obj\Debug\net5.0\ProgrammersBlog.Services.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Services\obj\Debug\net5.0\ref\ProgrammersBlog.Services.dll
 C:\source\ProgrammersBlog\ProgrammersBlog.Services\obj\Debug\net5.0\ProgrammersBlog.Services.pdb
+C:\source\ProgrammersBlog\ProgrammersBlog.Services\bin\Debug\net5.0\ProgrammersBlog.Services.xml
