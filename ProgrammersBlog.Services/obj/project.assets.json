@@ -8616,19 +8616,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mustafa Harun\\.nuget\\packages\\": {}
+    "C:\\Users\\mharu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj",
+      "projectUniqueName": "C:\\Users\\mharu\\Masaüstü\\ProgrammersBlog-MVC\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj",
       "projectName": "ProgrammersBlog.Services",
-      "projectPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj",
-      "packagesPath": "C:\\Users\\Mustafa Harun\\.nuget\\packages\\",
-      "outputPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Services\\obj\\",
+      "projectPath": "C:\\Users\\mharu\\Masaüstü\\ProgrammersBlog-MVC\\ProgrammersBlog.Services\\ProgrammersBlog.Services.csproj",
+      "packagesPath": "C:\\Users\\mharu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mharu\\Masaüstü\\ProgrammersBlog-MVC\\ProgrammersBlog.Services\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Mustafa Harun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mharu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8642,14 +8647,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj": {
-              "projectPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj"
+            "C:\\Users\\mharu\\Masaüstü\\ProgrammersBlog-MVC\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj": {
+              "projectPath": "C:\\Users\\mharu\\Masaüstü\\ProgrammersBlog-MVC\\ProgrammersBlog.Data\\ProgrammersBlog.Data.csproj"
             },
-            "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj": {
-              "projectPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj"
+            "C:\\Users\\mharu\\Masaüstü\\ProgrammersBlog-MVC\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj": {
+              "projectPath": "C:\\Users\\mharu\\Masaüstü\\ProgrammersBlog-MVC\\ProgrammersBlog.Entities\\ProgrammersBlog.Entities.csproj"
             },
-            "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj": {
-              "projectPath": "C:\\source\\ProgrammersBlog\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj"
+            "C:\\Users\\mharu\\Masaüstü\\ProgrammersBlog-MVC\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj": {
+              "projectPath": "C:\\Users\\mharu\\Masaüstü\\ProgrammersBlog-MVC\\ProgrammersBlog.Shared\\ProgrammersBlog.Shared.csproj"
             }
           }
         }
@@ -8688,7 +8693,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
